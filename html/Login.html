@@ -36,10 +36,26 @@
                         <input class="form-check-input" type="checkbox" name="remember"> Remember me
                     </label>
                 </div>
-                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Iniciar sesión</button>
                 <div class="d-flex justify-content-center align-items-center">
                     <p>No tienes una cuenta <a href="">Crear una</a></p>
                 </div>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal Heading</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                          No se ha podido iniciar sesión, por que la base de datos no está conectada.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </fieldset>
         </form>
     </main>
