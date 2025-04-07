@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Portada</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
@@ -13,23 +13,29 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <main>
-        <div class="d-flex justify-content-center align-items-center mx-auto">
-            <img src="../img/Inicio/Logo_inicio.png" alt="Portada" class="img-fluid" width="40%">
-        </div>
+<body class="container-fluid bg-warning">
+    <main class="container-fluid mx-auto">
+        <a href="../html/Inicio.html">
+            <div class="container-fluid d-flex justify-content-center align-items-center w-50">
+                <img src="../img/Inicio/Logo_inicio.png" alt="Portada" class="img-fluid w-75">
+            </div>
+        </a>
     </main>
-    <footer class="bg-dark">
-        <div class="d-flex justify-content-around align-items-center text-light">
-            <p>
-                Todos los derechos reservados a Lázaro Productions
+    <footer class="container-fluid bg-dark">
+        <div class="container-fluid d-flex justify-content-around align-items-center text-light">
+            <p class="container-fluid w-50">
+                &copy; Todos los derechos reservados a Lázaro Productions
                 <br />
                 Nombre: Álvaro Lázaro Castellón
                 <br />
                 Contacto: 699 83 09 17 - alvarolazaro101@gmail.com
             </p>
-            <div class="d-flex justify-content-around align-items-center">
-                <img src="../img/Redes/facebook.png" alt="Facebook" class="img-fluid" width="40%"><img src="../img/Redes/instagram.png" alt="Instagram" class="img-fluid" width="40%"><img src="../img/Redes/twitter-logo.png" alt="Twitter" class="img-fluid" width="40%">
+            <div class="container-fluid d-flex justify-content-between align-items-center w-25 p-5">
+                <a href="https://es-es.facebook.com/"><img src="../img/Redes/facebook.png" alt="Facebook"
+                        class="img-fluid w-50"></a><a href="https://www.instagram.com/"><img
+                        src="../img/Redes/instagram.png" alt="Instagram" class="img-fluid w-50"></a><a
+                    href="https://x.com/"><img src="../img/Redes/twitter-logo.png" alt="Twitter"
+                        class="img-fluid w-50"></a>
             </div>
         </div>
     </footer>
