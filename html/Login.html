@@ -14,48 +14,33 @@
 </head>
 
 <body class="bg-warning">
-    <header class="container-fluid">
-        <div class="container-fluid d-flex justify-content-center align-items-center w-50">
+    <header class="container">
+        <div class="container d-flex justify-content-center align-items-center w-50">
             <img src="../img/Inicio/Logo.png" alt="Logo" class="img-fluid">
         </div>
     </header>
-    <main class="container-fluid mx-auto d-flex justify-content-center align-items-center w-50">
+    <main class="container mx-auto d-flex justify-content-center align-items-center w-50">
         <form action="#" class="was-validated border border-5 rounded-5">
             <fieldset>
                 <legend>Iniciar Sesión</legend>
                 <div class="mb-3 mt-3">
                     <label for="email" class="form-label">Introduce tu Correo electronico:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                 </div>
                 <div class="mb-3">
                     <label for="pwd" class="form-label">Introduce tu:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
                 </div>
                 <div class="form-check mb-3">
                     <label class="form-check-label">
                         <input class="form-check-input" type="checkbox" name="remember"> Remember me
                     </label>
                 </div>
-                <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Iniciar sesión</button>
+                <button type="submit" class="btn btn-primary"><a href="../html/Inicio.html">Iniciar sesión</a></button>
                 <div class="d-flex justify-content-center align-items-center">
-                    <p>No tienes una cuenta <a href="">Crear una</a></p>
+                    <p>No tienes una cuenta <a href="../html/Signin.html">Crear una</a></p>
                 </div>
-                <div class="modal" id="myModal">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title">Error</h4>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                          No se ha podido iniciar sesión, por que la base de datos no está conectada.
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                
             </fieldset>
         </form>
     </main>
