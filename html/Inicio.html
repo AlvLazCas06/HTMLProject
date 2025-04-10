@@ -17,10 +17,12 @@
     <header class="container-fluid bg-danger border-bottom border-5 border-light w-100">
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../html/Portada.html"><img src="../img/Inicio/Logo.png" alt="Logo"
-                        class="img-fluid w-25"></a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
-                    data-bs-target="#mynavbar"></button>
+                <a class="navbar-brand m-0" href="../html/Portada.html">
+                    <img src="../img/Inicio/Logo.png" alt="Logo" class="img-fluid" style="max-height: 50px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
@@ -34,28 +36,37 @@
                         </li>
                     </ul>
                     <div class="d-flex">
-                        <a href="../html/Login.html">Iniciar Sesión</a>
+                        <a href="" class="nav-link text-white">Iniciar Sesión</a>
                     </div>
                 </div>
-
             </div>
         </nav>
     </header>
-    <footer class="container-fluid bg-dark fixed-bottom">
-        <div class="container-fluid d-flex justify-content-around align-items-center text-light">
-            <p class="container-fluid w-50">
-                &copy; Todos los derechos reservados a Lázaro Productions
-                <br />
-                Nombre: Álvaro Lázaro Castellón
-                <br />
-                Contacto: 699 83 09 17 - alvarolazaro101@gmail.com
-            </p>
-            <div class="container-fluid d-flex justify-content-between align-items-center w-25 p-5">
-                <a href="https://es-es.facebook.com/"><img src="../img/Redes/facebook.png" alt="Facebook"
-                        class="img-fluid w-50"></a><a href="https://www.instagram.com/"><img
-                        src="../img/Redes/instagram.png" alt="Instagram" class="img-fluid w-50"></a><a
-                    href="https://x.com/"><img src="../img/Redes/twitter-logo.png" alt="Twitter"
-                        class="img-fluid w-50"></a>
+    <footer class="container-fluid bg-dark text-light py-3">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="mb-0">
+                    &copy; Todos los derechos reservados a Lázaro Productions
+                    <br />
+                    Nombre: Álvaro Lázaro Castellón
+                    <br />
+                    Contacto: 699 83 09 17 - alvarolazaro101@gmail.com
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center justify-content-md-end">
+                    <a href="https://es-es.facebook.com/" class="mx-2">
+                        <img src="../img/Redes/facebook.png" alt="Facebook" class="img-fluid" style="max-width: 40px;">
+                    </a>
+                    <a href="https://www.instagram.com/" class="mx-2">
+                        <img src="../img/Redes/instagram.png" alt="Instagram" class="img-fluid"
+                            style="max-width: 40px;">
+                    </a>
+                    <a href="https://x.com/" class="mx-2">
+                        <img src="../img/Redes/twitter-logo.png" alt="Twitter" class="img-fluid"
+                            style="max-width: 40px;">
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
