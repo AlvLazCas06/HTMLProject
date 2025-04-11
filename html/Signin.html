@@ -1,21 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
-<body>
-    <header class="container-fluid">
-        <div class="container-fluid d-flex justify-content-center align-items-center w-25">
-            <img src="../img/Inicio/Logo.png" alt="Logo" class="img-fluid">
+
+<body class="bg-warning d-flex flex-column min-vh-100">
+    <header class="container-fluid bg-danger border-bottom border-5 border-white">
+        <div class="container py-3">
+            <div class="text-center">
+                <img src="../img/Inicio/Logo.png" alt="Logo" class="img-fluid" style="max-height: 80px;">
+            </div>
         </div>
     </header>
+
+    <main class="container my-5 flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="card border-danger border-5 rounded-4 shadow-lg">
+                    <div class="card-header bg-danger text-white">
+                        <h2 class="text-center mb-0">CREAR CUENTA</h2>
+                    </div>
+                    <div class="card-body bg-white p-4">
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label fw-bold">Nombre</label>
+                                    <input type="text" class="form-control border-danger border-2" id="nombre" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa tu nombre
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="apellido" class="form-label fw-bold">Apellido</label>
+                                    <input type="text" class="form-control border-danger border-2" id="apellido" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa tu apellido
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label fw-bold">Correo Electrónico</label>
+                                    <input type="email" class="form-control border-danger border-2" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa un correo válido
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="password" class="form-label fw-bold">Contraseña</label>
+                                    <input type="password" class="form-control border-danger border-2" id="password" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa una contraseña
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="confirmPassword" class="form-label fw-bold">Confirmar Contraseña</label>
+                                    <input type="password" class="form-control border-danger border-2" id="confirmPassword" required>
+                                    <div class="invalid-feedback">
+                                        Las contraseñas deben coincidir
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="equipoFav" class="form-label fw-bold">Equipo Favorito</label>
+                                    <select class="form-select border-danger border-2" id="equipoFav" required>
+                                        <option value="" selected disabled>Selecciona tu equipo</option>
+                                        <option value="raimon">Raimon</option>
+                                        <option value="occult">Occult</option>
+                                        <option value="wild">Wild</option>
+                                        <option value="brain">Brain</option>
+                                        <option value="otaku">Otaku</option>
+                                        <option value="royal">Royal Academy</option>
+                                        <option value="shuriken">Shuriken</option>
+                                        <option value="farm">Farm</option>
+                                        <option value="kirkwood">Kirkwood</option>
+                                        <option value="zeus">Zeus</option>
+                                        <option value="alpino">Alpino</option>
+                                        <option value="fauxshore">Fauxshore</option>
+                                        <option value="mary">Mary Times</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Por favor selecciona un equipo
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input border-danger border-2" type="checkbox" id="terminos" required>
+                                        <label class="form-check-label" for="terminos">
+                                            Acepto los términos y condiciones
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Debes aceptar los términos
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 mt-4">
+                                <button class="btn btn-danger btn-lg fw-bold" type="submit">REGISTRARSE</button>
+                            </div>
+                        </form>
+                        <div class="text-center mt-3">
+                            <p>¿Ya tienes una cuenta? <a href="../html/Login.html" class="text-danger fw-bold">Inicia Sesión</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-dark text-light py-3 mt-auto">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">
+                        &copy; Todos los derechos reservados a Lázaro Productions
+                        <br />
+                        Nombre: Álvaro Lázaro Castellón
+                        <br />
+                        Contacto: 699 83 09 17 - alvarolazaro101@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <a href="https://es-es.facebook.com/" class="mx-2">
+                            <img src="../img/Redes/facebook.png" alt="Facebook" class="img-fluid" style="max-width: 40px;">
+                        </a>
+                        <a href="https://www.instagram.com/" class="mx-2">
+                            <img src="../img/Redes/instagram.png" alt="Instagram" class="img-fluid" style="max-width: 40px;">
+                        </a>
+                        <a href="https://x.com/" class="mx-2">
+                            <img src="../img/Redes/twitter-logo.png" alt="Twitter" class="img-fluid" style="max-width: 40px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

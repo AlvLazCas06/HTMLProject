@@ -28,6 +28,16 @@
     transform: scale(1.2);
 }
 
+.table tbody tr:nth-child(odd) {
+    background-color: #FFF9C4;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+
+
 @media (max-width: 768px) {
     .main-logo {
         max-width: 80%;
@@ -44,5 +54,39 @@
     
     .social-icons {
         justify-content: center !important;
+    }
+
+    .table thead th:nth-child(n+4):not(:last-child) {
+        display: none;
+    }
+    
+    .table tbody td:nth-child(n+4):not(:last-child) {
+        display: none;
+    }
+    
+    .table th, .table td {
+        padding: 8px 5px;
+        font-size: 14px;
+    }
+    
+    .team-logo {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-logo {
+        max-width: 150px;
+    }
+    
+    .login-form {
+        padding: 20px;
+        margin: 0 15px;
+    }
+    
+    .login-form legend {
+        font-size: 1.3rem;
     }
 }
